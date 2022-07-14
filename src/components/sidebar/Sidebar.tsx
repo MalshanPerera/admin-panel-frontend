@@ -53,6 +53,8 @@ const Sidebar = () => {
             <NotificationsIcon className={styles.icon} />
             <span>Notifications</span>
           </li>
+          <p className={styles.title}>SERVICE</p>
+
           <li>
             <SettingsSystemDaydreamIcon className={styles.icon} />
             <span>System Health</span>
