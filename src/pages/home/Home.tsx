@@ -1,4 +1,6 @@
 import Card from '../../components/card/Card';
+import Chart from '../../components/chart/Chart';
+import Featured from '../../components/featured/Featured';
 import Navbar from '../../components/navbar/Navbar';
 import Sidebar from '../../components/sidebar/Sidebar';
 import { CardType } from '../../helpers/enums';
@@ -15,6 +17,10 @@ const Home = () => {
           <Card type={CardType.Order} />
           <Card type={CardType.Earnings} />
           <Card type={CardType.Balance} />
+        </div>
+        <div className={styles.charts}>
+          <Featured />
+          <Chart />
         </div>
       </div>
     </div>

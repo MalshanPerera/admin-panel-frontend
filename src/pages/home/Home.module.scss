@@ -5,9 +5,14 @@
     flex: 7;
   }
 
-  .cards {
+  .cards,
+  .charts {
     display: flex;
     padding: 20px 30px;
     gap: 30px;
+  }
+
+  .charts {
+    padding: 10px 30px;
   }
 }
