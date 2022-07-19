@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className={styles.navbar}>
       <div className={styles.wrapper}>
         <div className={styles.search}>
-          <input type='text' placeholder='Search.....' />
+          <input type='text' placeholder='Search' />
           <SearchRoundedIcon />
         </div>
         <div className={styles.items}>
