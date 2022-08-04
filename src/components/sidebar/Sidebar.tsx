@@ -16,7 +16,7 @@ const Sidebar = () => {
   return (
     <div className={styles.sidebar}>
       <div className={styles.header}>
-        <span className={styles.logo}>lamadmin</span>
+        <span className={styles.logo}>Admin</span>
       </div>
       <hr />
       <div className={styles.content}>

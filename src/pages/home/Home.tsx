@@ -3,6 +3,7 @@ import Chart from '../../components/chart/Chart';
 import Featured from '../../components/featured/Featured';
 import Navbar from '../../components/navbar/Navbar';
 import Sidebar from '../../components/sidebar/Sidebar';
+import TransactionTable from '../../components/trasactionTable/TransactionTable';
 import { CardType } from '../../helpers/enums';
 import styles from './Home.module.scss';
 
@@ -22,6 +23,7 @@ const Home = () => {
           <Featured />
           <Chart />
         </div>
+        <TransactionTable />
       </div>
     </div>
   );

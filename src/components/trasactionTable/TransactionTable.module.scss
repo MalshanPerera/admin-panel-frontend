@@ -1,0 +1,44 @@
+.table {
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  padding: 20px;
+  margin: 10px 30px;
+  border-radius: 10px;
+
+  .title {
+    font-size: 18px;
+    font-weight: 500;
+    color: gray;
+  }
+
+  .tableContainer {
+    margin-top: 20px;
+
+    .cellWrapper {
+      display: flex;
+      align-items: center;
+
+      .image {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+        object-fit: cover;
+      }
+    }
+
+    .status {
+      padding: 5px;
+      border-radius: 5px;
+
+      &.Approved {
+        color: green;
+        background-color: rgba(0, 128, 0, 0.151);
+      }
+      &.Pending {
+        color: goldenrod;
+        background-color: rgba(189, 189, 3, 0.103);
+      }
+    }
+  }
+}
