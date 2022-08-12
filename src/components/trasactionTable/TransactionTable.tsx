@@ -94,18 +94,20 @@ const TransactionTable = () => {
           <TableBody>
             {rows.map((row) => (
               <TableRow key={row.id}>
-                <TableCell className='tableCell'>{row.id}</TableCell>
-                <TableCell className='tableCell'>
+                <TableCell className={styles.tableCell}>{row.id}</TableCell>
+                <TableCell className={styles.tableCell}>
                   <div className={styles.cellWrapper}>
                     <img src={row.img} alt='' className={styles.image} />
                     {row.product}
                   </div>
                 </TableCell>
-                <TableCell className='tableCell'>{row.customer}</TableCell>
-                <TableCell className='tableCell'>{row.date}</TableCell>
-                <TableCell className='tableCell'>{row.amount}</TableCell>
-                <TableCell className='tableCell'>{row.method}</TableCell>
-                <TableCell className='tableCell'>
+                <TableCell className={styles.tableCell}>
+                  {row.customer}
+                </TableCell>
+                <TableCell className={styles.tableCell}>{row.date}</TableCell>
+                <TableCell className={styles.tableCell}>{row.amount}</TableCell>
+                <TableCell className={styles.tableCell}>{row.method}</TableCell>
+                <TableCell className={styles.tableCell}>
                   <span
                     className={`${styles.status} ${
                       row.status === 'Approved'

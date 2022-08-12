@@ -87,10 +87,10 @@ const Sidebar = () => {
           </li>
         </ul>
       </div>
-      <div className={styles.footer}>
+      {/* <div className={styles.footer}>
         <div className={styles.color_options}></div>
         <div className={styles.color_options}></div>
-      </div>
+      </div> */}
     </div>
   );
 };
