@@ -29,7 +29,7 @@ const New = ({ title, inputs }: NewProps) => {
         <div className={styles.bottom}>
           <img
             src={
-              file
+              file.name !== ''
                 ? URL.createObjectURL(file)
                 : 'https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg'
             }
