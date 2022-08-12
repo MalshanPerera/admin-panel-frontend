@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import { DataGrid, GridValueGetterParams } from '@mui/x-data-grid';
 import { userColumns, userRows } from '../../dataTableSource';
+import AddCircleOutlineRoundedIcon from '@mui/icons-material/AddCircleOutlineRounded';
 import styles from './DataTable.module.scss';
 import { Link } from 'react-router-dom';
 
@@ -36,6 +37,19 @@ const DataTable = () => {
   ];
   return (
     <div className={styles.dataTable}>
+      <div className={styles.buttonContainer}>
+        <></>
+        <button className={styles.addUserButton}>
+          <Link
+            to={'/users/new'}
+            style={{ textDecoration: 'none' }}
+            className={styles.link}
+          >
+            Add New User
+            <AddCircleOutlineRoundedIcon className={styles.icon} />
+          </Link>
+        </button>
+      </div>
       <DataGrid
         rows={userRows}
         columns={userColumns.concat(actionColumn)}

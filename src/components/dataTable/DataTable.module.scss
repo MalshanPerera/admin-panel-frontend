@@ -2,6 +2,32 @@
   height: 600px;
   padding: 20px 30px;
 
+  .buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .addUserButton {
+      color: #7451f8;
+      background-color: transparent;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: #7451f8 solid 1px;
+
+      .icon {
+        color: #7451f8;
+      }
+
+      .link {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 5px;
+        color: #7451f8;
+      }
+    }
+  }
+
   .cellWithImg {
     display: flex;
     align-items: center;
