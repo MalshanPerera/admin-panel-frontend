@@ -4,10 +4,12 @@ import { DataGrid, GridValueGetterParams } from '@mui/x-data-grid';
 import { userColumns, userRows } from '../../dataTableSource';
 import AddCircleOutlineRoundedIcon from '@mui/icons-material/AddCircleOutlineRounded';
 import styles from './DataTable.module.scss';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const DataTable = () => {
   const [data, setData] = useState(userRows);
+
+  const location = useLocation();
 
   const handleDelete = (id: number) => {
     setData(data.filter((item) => item.id !== id));
@@ -41,11 +43,13 @@ const DataTable = () => {
         <></>
         <button className={styles.addUserButton}>
           <Link
-            to={'/users/new'}
+            to={`${location.pathname}/new`}
             style={{ textDecoration: 'none' }}
             className={styles.link}
           >
-            Add New User
+            {location.pathname === '/users'
+              ? 'Add New User'
+              : 'Add New Product'}
             <AddCircleOutlineRoundedIcon className={styles.icon} />
           </Link>
         </button>

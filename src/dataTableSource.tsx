@@ -119,7 +119,7 @@ export const userRows = [
     username: 'Frances',
     img: 'https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
     email: '8snow@gmail.com',
-    status: 'active',
+    status: 'Active',
     age: 36,
   },
   {
