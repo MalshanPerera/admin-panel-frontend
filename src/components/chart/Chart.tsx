@@ -9,6 +9,11 @@ import {
 
 import styles from './Chart.module.scss';
 
+interface ChartProps {
+  aspect: number;
+  title: string;
+}
+
 const data = [
   { name: 'January', Total: 1200 },
   { name: 'February', Total: 2100 },
@@ -18,11 +23,11 @@ const data = [
   { name: 'June', Total: 1700 },
 ];
 
-const Chart = () => {
+const Chart = ({ title, aspect }: ChartProps) => {
   return (
     <div className={styles.chart}>
-      <div className={styles.title}>Last 6 Months (Revenue)</div>
-      <ResponsiveContainer width='100%' aspect={3 / 1}>
+      <div className={styles.title}>{title}</div>
+      <ResponsiveContainer width='100%' aspect={aspect}>
         <AreaChart
           width={730}
           height={250}
